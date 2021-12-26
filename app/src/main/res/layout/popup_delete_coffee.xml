@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:screenOrientation="portrait">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_shop_frame"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="7dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/frame_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:text="Supprimer"
+                    android:background="@color/colorSecondaryLight"
+                    android:textSize="20dp"
+                    android:padding="7dp"/>
+                <TextView
+                    android:id="@+id/alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_title"
+                    android:textColor="@color/colorSecondaryLight"
+                    android:text="Vous êtes sur le point de supprimer ... \nêtes vous sur ?"
+                    android:layout_margin="7dp"/>
+
+                <Button
+                    android:id="@+id/ok_del"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alert"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:text="Supprimer"/>
+                <Button
+                    android:id="@+id/cancel"
+                    style="@style/AppTheme.ButtonBorderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alert"
+                    android:layout_toLeftOf="@id/ok_del"
+                    android:layout_margin="5dp"
+                    android:text="Annuler"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

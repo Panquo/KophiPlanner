@@ -1,0 +1,49 @@
+<resources>
+
+
+    <style name="FrontPage" parent="DefTheme">
+    </style>
+
+    <style name="DefTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkCoffee</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+    </style>
+
+    <style name="AppTheme" parent="FrontPage">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="hide">
+        <item name="android:background">@color/hide</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="PopupToolbar" parent="Theme.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="anim_popup">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.ButtonBorderless" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+</resources>

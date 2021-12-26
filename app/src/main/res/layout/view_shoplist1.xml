@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:screenOrientation="portrait">
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="nom : "
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/new_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nom : "
+        android:textColor="@drawable/edittext_selector"
+        android:textColorHint="@color/colorPrimaryLight"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:layout_below="@+id/tname"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tshops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Magasins : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/new_name" />
+
+</RelativeLayout>

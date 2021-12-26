@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kophi Planner</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="camera_header">Appareil Photo</string>
+
+    <!-- Messages Preferences -->
+    <string name="camera_status">état de la caméra</string>
+
+</resources>
